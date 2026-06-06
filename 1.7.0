@@ -1,0 +1,22 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: torch in c:\users\mi\.conda\envs\yolov11\lib\site-packages (2.5.1)
+Collecting package_name
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/61/5f/6690d5f0bad41818063e3f436c101deff0f243adede1d23642deb607349d/package_name-0.1.tar.gz (782 bytes)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: filelock in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (3.16.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (4.12.2)
+Requirement already satisfied: networkx in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (3.1.4)
+Requirement already satisfied: fsspec in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (2024.10.0)
+Requirement already satisfied: sympy==1.13.1 in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from torch) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from sympy==1.13.1->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\mi\.conda\envs\yolov11\lib\site-packages (from jinja2->torch) (3.0.2)
+Building wheels for collected packages: package_name
+  Building wheel for package_name (setup.py): started
+  Building wheel for package_name (setup.py): finished with status 'done'
+  Created wheel for package_name: filename=package_name-0.1-py3-none-any.whl size=1233 sha256=75ba0962c682ded178675bb359ddedf449672582e1b256e6165626c279cb03d9
+  Stored in directory: c:\users\mi\appdata\local\pip\cache\wheels\02\28\10\a99056bc53ed7c564c2ad833698c4fb90a08d2c64c7d84dbd8
+Successfully built package_name
+Installing collected packages: package_name
+Successfully installed package_name-0.1
