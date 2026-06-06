@@ -170,3 +170,8 @@ pnnx*
 
 # calibration image
 calibration_*.npy
+
+# Project model weights
+!/model/
+!/model/**/
+!/model/**/*.pt
