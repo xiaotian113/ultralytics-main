@@ -1,6 +1,6 @@
-# Ultralytics YOLO Custom Project
+# Project
 
-This repository contains a customized Ultralytics YOLO project with added model modules and experiment configurations.
+yolo验证
 
 ## Setup
 
@@ -8,16 +8,14 @@ This repository contains a customized Ultralytics YOLO project with added model 
 pip install -r requirements.txt
 ```
 
-## Train
+## Val
 
 ```bash
-python train.py
+python val.py
 ```
 
-The default training script uses `SARDet-100K.yaml` and writes outputs to `runs/train`.
+更改val.py里面不同模型的文件夹路径来验证各个模型的实验结果
 
 ## Notes
 
-- Datasets are not included in this repository.
-- Training outputs and model weights are ignored by Git.
-- Update `SARDet-100K.yaml` to match your local dataset path before training.
+- 更新SARDet-100K.yaml的路径
