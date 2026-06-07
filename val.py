@@ -2,7 +2,7 @@ import torch
 from ultralytics.models.yolo.detect import DetectionValidator
 from ultralytics import YOLO
 # 1. 加载模型
-ckpt = torch.load('ultralytics-main/交付/Shape-IoU/best.pt', map_location='cpu')
+ckpt = torch.load('ultralytics-main/model/Shape-IoU/best.pt', map_location='cpu')
 if isinstance(ckpt, dict) and 'model' in ckpt:
     module = ckpt['model']
 else:
