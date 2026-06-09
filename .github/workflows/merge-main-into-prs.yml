@@ -6,9 +6,6 @@ name: Merge main into PRs
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - ${{ github.event.repository.default_branch }}
 
 jobs:
   Merge:
@@ -67,17 +64,17 @@ jobs:
                       try:
                           success = pr.update_branch()
                           assert success, "Branch update failed"
-                          print(f"‚úÖ Successfully merged '{default_branch_name}' into PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}).")
+                          print(f"‚ú?Successfully merged '{default_branch_name}' into PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}).")
                           updated_branches += 1
                           time.sleep(10)  # rate limit merges
                       except Exception as update_error:
-                          print(f"‚ùå Could not update PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}): {update_error}")
+                          print(f"‚ù?Could not update PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}): {update_error}")
                           errors += 1
                   else:
-                      print(f"‚úÖ PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}) is already up to date with {default_branch_name}, no merge required.")
+                      print(f"‚ú?PR #{pr.number} ({head_repo_name}:{head_branch_name} -> {base_repo_name}:{base_branch_name}) is already up to date with {default_branch_name}, no merge required.")
                       up_to_date_branches += 1
               except Exception as e:
-                  print(f"‚ùå Could not process PR #{pr.number}: {e}")
+                  print(f"‚ù?Could not process PR #{pr.number}: {e}")
                   errors += 1
 
           # Print summary

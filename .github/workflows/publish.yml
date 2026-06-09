@@ -4,13 +4,7 @@
 name: Publish to PyPI
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
-    inputs:
-      pypi:
-        type: boolean
-        description: Publish to PyPI
 
 jobs:
   publish:
@@ -50,7 +44,7 @@ jobs:
           os.system(f'echo "current_tag=v{local_version}" >> $GITHUB_OUTPUT')
           os.system(f'echo "previous_tag=v{online_version}" >> $GITHUB_OUTPUT')
           if publish:
-              print('Ready to publish new version to PyPI âœ….')
+              print('Ready to publish new version to PyPI âœ?')
         id: check_pypi
       - name: Build package
         if: (github.event_name == 'push' || github.event.inputs.pypi == 'true') && steps.check_pypi.outputs.increment == 'True'
