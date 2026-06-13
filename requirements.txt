@@ -11,7 +11,7 @@ fsspec==2024.10.0
 grpcio==1.68.1
 huggingface-hub==0.29.1
 idna==3.10
-Jinja2==3.1.4
+Jinja2==3.1.6
 joblib==1.5.0
 kiwisolver==1.4.7
 Markdown==3.7
